@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+
+    <title>pdfMerge</title>
+ 
+    <style>
+      *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html ,body{
+    width:100%;
+    height:100%;
+    background-color: #101820ff;
+}
+
+#nav{
+    height: 50px;
+    width: 100%;
+    background-color: lightskyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form label {
+    color: aliceblue;
+    font-size: 50px;
+   display: flex;
+   justify-content: center;
+   margin-top: 2%;
+   
+
+}
+form input {
+    color: aliceblue;
+margin-left: 43%;
+margin-top: 10%;
+
+
+}
+
+
+#form button{
+
+   padding: 8px;
+
+    border-radius: 5%;
+    background-color: lightskyblue;
+    border: transparent;
+    margin-left: 45%;
+    margin-top: 3%;
+
+}
+
+i{
+    font-size: 30px;
+
+}
+    </style>
+  </head>
+  <body>
+
+
+    <div id="main">
+      <div id="nav">
+        <i class="ri-file-pdf-2-line"></i>
+        <h2>PDF Merger</h2>
+
+      </div>
+      <div id="box">
+
+ 
+      <div id="form">
+        <form action="/processpdf" method="post" enctype="multipart/form-data">
+          <label for="pdfs">Choose your pdf to Merge</label><br>
+          <input type="file"name="pdfs" id="" accept="pdf" required multiple >
+          <button>Submit</button>
+        </form>
+        
+      </div>
+
+
+      </div>
+    </div>
+
+
+  </body>
+</html>
